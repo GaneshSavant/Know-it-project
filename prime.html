@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <script>
+             function isPrime(num)
+            {
+                if(num==1)
+                document.write("Num is not prime ")
+
+                else if (num<0)
+                document.write("Num is not prime  ")
+
+                else 
+                {
+                    for (var i=2;i<num;i++)
+                    {
+
+                        var flag=true;
+                        if(num%i==0)
+                        {
+                            document.write("Num is not prime")
+                            flag=false;
+                            break;
+                        }    
+                    }
+
+                    if(flag==true)
+                    {
+                        document.write("Num is Prime");
+                    }
+                    document.getElementById("result").innerHTML="prime "+isPrime 
+                }
+            }
+        
+
+        </script>
+    </head>
+    <body>
+        <form>
+            Enter number: <input type="=number" name="num"/>
+        <br/>
+        <input type="button" value="display"
+        onclick="isPrime(num.value)"/>
+    </form>
+    <div id="result"></div>
+        </form>
+    </body>
+</html>
